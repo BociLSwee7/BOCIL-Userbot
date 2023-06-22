@@ -2,7 +2,7 @@
 # Credits (C) 2022-2023 @AyiinXd
 #
 # FROM Ayiin-Userbot <https://github.com/AyiinXd/Ayiin-Userbot>
-# t.me/AyiinXdSupport & t.me/AyiinSupport
+# t.me/AyiinChats & t.me/AyiinSupport
 
 # ========================×========================
 #                Link For Collaborator

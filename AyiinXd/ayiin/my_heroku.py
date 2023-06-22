@@ -7,7 +7,7 @@
 #
 # Ported by @AyiinXd
 # FROM Ayiin-Userbot <https://github.com/AyiinXd/Ayiin-Userbot>
-# t.me/AyiinXdSupport & t.me/AyiinSupport
+# t.me/AyiinChats & t.me/AyiinSupport
 
 import heroku3
 import math

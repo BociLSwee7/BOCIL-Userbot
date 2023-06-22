@@ -7,7 +7,7 @@
 #
 # Ported by @AyiinXd
 # FROM Ayiin-Userbot <https://github.com/AyiinXd/Ayiin-Userbot>
-# t.me/AyiinXdSupport & t.me/AyiinSupport
+# t.me/AyiinChats & t.me/AyiinSupport
 
 # ========================×========================
 #            Jangan Hapus Credit Ngentod
@@ -41,7 +41,7 @@ Y_BUTTONS = [
            custom.Button.url("Rᴇᴘʟɪᴛ Sᴛʀɪɴɢ", "https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
         ],
         [
-           custom.Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/AyiinXdSupport"),
+           custom.Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/AyiinChats"),
         ],
     ]
 

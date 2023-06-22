@@ -7,7 +7,7 @@
 #
 # Recode by @AyiinXd
 # FROM Ayiin-Userbot <https://github.com/AyiinXd/Ayiin-Userbot>
-# t.me/AyiinXdSupport & t.me/AyiinSupport
+# t.me/AyiinChats & t.me/AyiinSupport
 
 from telethon.tl import types
 from telethon.utils import get_display_name

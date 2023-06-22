@@ -6,7 +6,7 @@
 # <https://www.github.com/AyiinXd/Ayiin-Userbot/blob/main/LICENSE/>.
 #
 # FROM Ayiin-Userbot <https://github.com/AyiinXd/Ayiin-Userbot>
-# t.me/AyiinXdSupport & t.me/AyiinSupport
+# t.me/AyiinChats & t.me/AyiinSupport
 
 
 # ========================×========================
@@ -24,7 +24,7 @@ from Stringyins import get_string
 
 @ayiin_cmd(pattern="ceking(?: |$)(.*)")
 async def _(mnghna):
-    Ayiin = await mnghneor(a, get_string("yitxc_74"))
+    Ayiin = await mnghna.eor(get_string("yitxc_74"))
     sleep(1)
     await Ayiin.edit(get_string("yitxc_75"))
     sleep(1)

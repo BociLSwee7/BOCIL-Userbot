@@ -6,7 +6,7 @@
 # <https://www.github.com/AyiinXd/Ayiin-Userbot/blob/main/LICENSE/>.
 #
 # FROM Ayiin-Userbot <https://github.com/AyiinXd/Ayiin-Userbot>
-# t.me/AyiinXdSupport & t.me/AyiinSupport
+# t.me/AyiinChats & t.me/AyiinSupport
 
 # ========================×========================
 #            Jangan Hapus Credit Ngentod
@@ -102,7 +102,7 @@ async def on_btpm_save(event):
     """ For .savebt command, saves btpm for future use. """
     try:
         from AyiinXd.ayiin.btpm_ayiin import add_btpm
-    except AtrributeError:
+    except BaseException:
         await event.edit(get_string("not_sql"))
         return
     keyword = event.pattern_match.group(1)

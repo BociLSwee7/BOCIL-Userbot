@@ -6,7 +6,7 @@
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 #
 # FROM Ayiin-Userbot <https://github.com/AyiinXd/Ayiin-Userbot>
-# t.me/AyiinXdSupport & t.me/AyiinSupport
+# t.me/AyiinChats & t.me/AyiinSupport
 
 
 # ========================×========================
@@ -476,27 +476,6 @@ async def font_yins(ayiin):
 #            Jangan Hapus Credit Ngentod
 # ========================×========================
 
-arguments = [
-    "smallcap",
-    "monospace",
-    "outline",
-    "script",
-    "blackbubbles",
-    "bubbles",
-    "bold",
-    "bolditalic"
-]
-
-fonts = [
-    "smallcap",
-    "monospace",
-    "outline",
-    "script",
-    "blackbubbles",
-    "bubbles",
-    "bold",
-    "bolditalic"
-]
 
 _default = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 _smallcap = "ᴀʙᴄᴅᴇғɢʜɪᴊᴋʟᴍɴᴏᴘϙʀsᴛᴜᴠᴡxʏᴢABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -508,20 +487,6 @@ _bubbles = "ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥ�
 _bold = "𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭"
 _bolditalic = "𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕"
 
-
-async def fonts(text):
-    r = requests.get(
-        f"{fonts}?type=fonts&text={text}"
-    ).json()
-    geng = r.get("message")
-    kapak = url(geng)
-    if not kapak:
-        return "check syntax once more"
-    with open("chat_id", "msg") as f:
-        f.write(requests.get(geng).content)
-    text = await text.client.send_message("fonts").convert("text")
-    text.client.get_message("fonts", "text")
-    return "fonts"
 
 
 def gen_font(text, new_font):
