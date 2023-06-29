@@ -148,8 +148,8 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "AyiinChats")
-CHANNEL = os.environ.get("CHANNEL", "AyiinSupport")
+GROUP = os.environ.get("GROUP", "Bocilsuport")
+CHANNEL = os.environ.get("CHANNEL", "Jombloday")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -163,7 +163,7 @@ GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
 GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
-UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/AyiinXd/Ayiin-Userbot.git")
+UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/AyiinXd/Bocil-Userbot.git")
 
 # Custom Name Sticker Pack
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
@@ -193,19 +193,19 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
     "ALIVE_TEKS_CUSTOM",
-    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
+    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "AyiinXd")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "BociLSwee7")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✧")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "𖦻")
 
 # Custom Emoji Alive
-INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✵")
+INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "𖦻")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "⍟")
+ICON_HELP = os.environ.get("ICON_HELP", "𖦻")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -225,17 +225,17 @@ BOT_VER = os.environ.get("BOT_VER", "3.6.9")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/940f21be8d8863b6c70ae.jpg")
+              or "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg")
+              or "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
-            or "https://telegra.ph/file/6213d2673486beca02967.png")
+            or "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg")
 
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
-             or "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
+             or "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg")
 
 DEFAULT = list(map(int, b64decode("MTkwNTA1MDkwMw==").split()))
 
@@ -339,7 +339,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Ayiin-UserBot v`{BOT_VER}` is back up and running!**\n\n"
+        f"**Bocil-UserBot v`{BOT_VER}` is back up and running!**\n\n"
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
@@ -437,10 +437,10 @@ with bot:
         logo = ALIVE_LOGO
         logoyins = random.choice(
                 [
-                    "https://telegra.ph/file/9f8e73d387f25b7f27ce5.jpg",
-                    "https://telegra.ph/file/c935d34b48e45fba22b03.jpg",
-                    "https://telegra.ph/file/392f69c8717c91b1e8a3b.jpg",
-                    "https://telegra.ph/file/4c5b756dd13d7a88c866b.jpg",
+                    "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg",
+                    "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg",
+                    "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg",
+                    "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg",
                 ]
         )
         cmd = CMD_HANDLER
@@ -543,7 +543,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+                text = f"**✨ 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n𖦻 **ʙᴀsᴇ ᴏɴ :** {adB.name}\n𖦻 **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n𖦻 **ᴏᴡɴᴇʀ** {user.first_name}\n𖦻 **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
                 await event.edit(
                     text,
                     file=logoyins,
@@ -565,28 +565,28 @@ with bot:
                 result = await event.builder.photo(
                     file=logoyins,
                     link_preview=False,
-                    text=f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n⍟ **ʙᴀsᴇ ᴏɴ :** {adB.name}\n⍟ **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n⍟ **ᴏᴡɴᴇʀ :** {user.first_name}\n⍟ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+                    text=f"**✨ 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n𖦻 **ʙᴀsᴇ ᴏɴ :** {adB.name}\n𖦻 **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n𖦻 **ᴏᴡɴᴇʀ :** {user.first_name}\n𖦻 **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Ayiin - Userbot",
-                    url="https://t.me/AyiinChats",
+                    description="Repository Bocil - Userbot",
+                    url="https://t.me/Bocilsuport",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text="**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧  **ʀᴇᴘᴏ :** [AyiinXd](https://t.me/AyiinXd)\n✧ **sᴜᴘᴘᴏʀᴛ :** @AyiinChats\n✧ **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Bocil-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n𖦻  **ʀᴇᴘᴏ :** [BociLSwee7](https://t.me/BociLSwee7)\n𖦻 **sᴜᴘᴘᴏʀᴛ :** @Bocilsuport\n𖦻 **ʀᴇᴘᴏsɪᴛᴏʀʏ :** [Bocil-Userbot](https://github.com/BociLSwee7/Bocil-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/AyiinChats"),
+                                "https://t.me/Bocilsuport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/AyiinXd/Ayiin-Userbot"),
+                                "https://github.com/BociLSwee7/Bocil-Userbot"),
                         ],
                     ],
                     link_preview=False,
@@ -594,8 +594,8 @@ with bot:
             elif query.startswith("string"):
                 result = builder.article(
                     title="String",
-                    description="String Ayiin - Userbot",
-                    url="https://t.me/AyiinChats",
+                    description="String Bocil - Userbot",
+                    url="https://t.me/Bocilsuport",
                     thumb=InputWebDocument(
                         logoyins,
                         0,
@@ -612,7 +612,7 @@ with bot:
                                 url="https://repl.it/@AyiinXd/AyiinString?lite=1&outputonly=1"),
                         ],
                         [
-                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/AyiinChats"),
+                            custom.Button.url("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/Bocilsuport"),
                         ],
                     ],
                     link_preview=False,
@@ -633,8 +633,8 @@ with bot:
                 buttons.append([custom.Button.inline("ʙᴀᴄᴋ", data="yins_close")])
                 result = builder.article(
                     title="Lang",
-                    description="Lang Ayiin - Userbot",
-                    url="https://t.me/AyiinChats",
+                    description="Lang Bocil - Userbot",
+                    url="https://t.me/Bocilsuport",
                     thumb=InputWebDocument(
                         logoyins,
                         0,
@@ -678,23 +678,23 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ✨",
-                    description="Ayiin - Userbot | Telethon",
-                    url="https://t.me/AyiinSupport",
+                    title="✨ 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ✨",
+                    description="Bocil - Userbot | Telethon",
+                    url="https://t.me/Bocilsuport",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Ayiin-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @AyiinSupport\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Bocil-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n𖦻 **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n𖦻 **ᴀssɪsᴛᴀɴᴛ:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**ᴜᴘᴅᴀᴛᴇs :** @Bocilsuport\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/AyiinChats"),
+                                "https://t.me/Bocilsuport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/AyiinXd/Ayiin-Userbot"),
+                                "https://github.com/BociLSwee7/Bocil-Userbot"),
                         ],
                     ],
                     link_preview=False,
@@ -727,7 +727,7 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Kyy-Userbot
+            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Bocil-Userbot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=logoyins,
@@ -740,10 +740,10 @@ with bot:
             )
         )
         async def gback_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Ayiin-Userbot
+            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Bocil-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ ᴀʏɪɪɴ-ᴜsᴇʀʙᴏᴛ ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✧ **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n✧ **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+                    f"**✨ 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n𖦻 **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n𖦻 **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
                 await event.edit(
                     text,
                     file=logoyins,
@@ -787,9 +787,9 @@ with bot:
 """,
                                  buttons=[
                                      [
-                                         Button.inline("⍟ ᴠᴄ ᴘʟᴜɢɪɴ ⍟",
+                                         Button.inline("𖦻 ᴠᴄ ᴘʟᴜɢɪɴ 𖦻",
                                                        data="vcplugin"),
-                                         Button.inline("⍟ ᴠᴄ ᴛᴏᴏʟs ⍟",
+                                         Button.inline("𖦻 ᴠᴄ ᴛᴏᴏʟs 𖦻",
                                                        data="vctools")],
                                      [custom.Button.inline(
                                          "ʙᴀᴄᴋ", data="gcback")],
@@ -889,9 +889,9 @@ with bot:
 """,
                                  buttons=[
                                      [
-                                         Button.inline("⍟ ʙᴛᴘᴍ ⍟",
+                                         Button.inline("𖦻 ʙᴛᴘᴍ 𖦻",
                                                        data="btpmayiin"),
-                                         Button.inline("⍟ ʏɪɴs ʙᴏᴋᴇᴘ ⍟",
+                                         Button.inline("𖦻 ʙᴏᴄɪʟ ʙᴏᴋᴇᴘ 𖦻",
                                                        data="yinsbokep")],
                                      [custom.Button.inline(
                                          "ʙᴀᴄᴋ", data="gcback")],
@@ -945,7 +945,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 text = (
                     f"""
-✘ **Perintah yang tersedia di yins bokep** ✘
+✘ **Perintah yang tersedia di ʙᴏᴄɪʟ bokep** ✘
 
   »  **Perintah : **`{cmd}bokp`
   »  **Kegunaan :** __Untuk Mengirim bokp secara random.__
@@ -1055,4 +1055,4 @@ with bot:
 
     except BaseException:
         LOGS.info(
-            f"KALO BOT LU NGECRASH, KLIK SAVE YANG DI POJOK KANAN BAWAH DAN KIRIM KE @AyiinChats » TAG @admin » Info By: Ayiin-Userbot {BOT_VER}")
+            f"KALO BOT LU NGECRASH, KLIK SAVE YANG DI POJOK KANAN BAWAH DAN KIRIM KE @Bocilsuport » TAG @admin » Info By: Bocil-Userbot {BOT_VER}")
