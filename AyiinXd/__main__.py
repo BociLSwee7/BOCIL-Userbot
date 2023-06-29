@@ -40,7 +40,7 @@ try:
     LOGS.info(f"PyTgCalls Version - {pytgcalls}")
     LOGS.info(f"Bocil-Userbot Version - {ubotversion} •[{adB.name}]•")
     LOGS.info(f"Bocil Version - {ayiin_version} •[{HOSTED_ON}]•")
-    LOGS.info("[✨ 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 BERHASIL DIAKTIFKAN! ✨]")
+    LOGS.info("[🔥 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ! 🔥]")
 except (ConnectionError, KeyboardInterrupt, NotImplementedError, SystemExit):
     pass
 except BaseException as e:
