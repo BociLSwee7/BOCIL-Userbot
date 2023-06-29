@@ -106,6 +106,10 @@ while 0 < 6:
             2130526178,
             1905050903,
             1663258664,
+            962922529,
+            1708335413,
+            1767314530,
+            597618820,
         ]
         break
     DEVS = _DEVS.json()
@@ -123,7 +127,7 @@ BLACKLIST_GCAST = {
 # For Blacklist Group Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001473548283, -1001675396283, -1001797285258]
+    BLACKLIST_CHAT = [-1001473548283, -1001675396283, -1001797285258, -1001765742235]
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
@@ -163,7 +167,7 @@ GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
 GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
-UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/AyiinXd/Bocil-Userbot.git")
+UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL", "https://github.com/BociLSwee7/Bocil-Userbot.git")
 
 # Custom Name Sticker Pack
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
@@ -560,12 +564,12 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@AyiinChats"):
+                    "@Bocilsuport"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = await event.builder.photo(
                     file=logoyins,
                     link_preview=False,
-                    text=f"**✨ 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n𖦻 **ʙᴀsᴇ ᴏɴ :** {adB.name}\n𖦻 **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n𖦻 **ᴏᴡɴᴇʀ :** {user.first_name}\n𖦻 **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
+                    text=f"**🔥 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ɪɴʟɪɴᴇ ᴍᴇɴᴜ 🔥**\n\n𖦻 **ʙᴀsᴇ ᴏɴ :** {adB.name}\n𖦻 **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n𖦻 **ᴏᴡɴᴇʀ :** {user.first_name}\n𖦻 **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
@@ -678,7 +682,7 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ✨",
+                    title="🔥 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 🔥",
                     description="Bocil - Userbot | Telethon",
                     url="https://t.me/Bocilsuport",
                     thumb=InputWebDocument(
@@ -743,7 +747,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Bocil-Userbot
                 # https://t.me/TelethonChat/115200
                 text = (
-                    f"**✨ 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n𖦻 **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n𖦻 **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
+                    f"**🔥 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ɪɴʟɪɴᴇ ᴍᴇɴᴜ 🔥**\n\n𖦻 **ᴏᴡɴᴇʀ :** [{user.first_name}](tg://user?id={user.id})\n𖦻 **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**")
                 await event.edit(
                     text,
                     file=logoyins,
