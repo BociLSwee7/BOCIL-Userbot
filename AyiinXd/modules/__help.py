@@ -39,12 +39,12 @@ async def helpyins(event):
             await eod(event, get_string("help_10").format(args, cmd))
     else:
         AyiinUBOT = await tgbot.get_me()
-        BOT_USERNAME = AyiinUBOT.username
+        BOT_USERNAME = BocilUBOT.username
         if BOT_USERNAME is not None:
             chat = "@Botfather"
             try:
                 results = await event.client.inline_query(  # pylint:disable=E0602
-                    BOT_USERNAME, "@AyiinChats"
+                    BOT_USERNAME, "@Bocilsuport"
                 )
                 await results[0].click(
                     event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
