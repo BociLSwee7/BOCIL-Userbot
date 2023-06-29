@@ -1,2 +1,2 @@
-# Extra Resources for Ayiin-Userbot
-Repository [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)
+# Extra Resources for Bocil-Userbot
+Repository [Bocil-Userbot](https://github.com/BociLSwee7/Bocil-Userbot)
