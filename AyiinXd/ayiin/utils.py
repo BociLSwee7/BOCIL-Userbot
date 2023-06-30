@@ -58,8 +58,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="Aʏɪɪɴ-Usᴇʀʙᴏᴛ Lᴏɢs",
-                about="» Group log Created by: Ayiin-Userbot\n\n» Support : @AyiinChats\n» Support: @AyiinSupport",
+                title="𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 Lᴏɢs",
+                about="» Group log Created by: Bocil-Userbot\n\n» Support : @Bocilsuport\n» Support: @Bocilsuport",
                 megagroup=True,
             ),
         )
@@ -77,7 +77,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/b88d710cee9a6d6783abc.jpg", "photoyins.jpg"
+            "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg", "photoBocil.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -106,7 +106,7 @@ async def autobot():
     if who.username:
         username = f"{who.username}_bot"
     else:
-        username = f"Ayiin{(str(who.id))[5:]}bot"
+        username = f"Bocil{(str(who.id))[5:]}bot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -135,8 +135,8 @@ async def autobot():
             sys.exit(1)
     filogo = random.choice(
           [
-              "https://telegra.ph/file/2127175807fe36f6a40f1.jpg",
-              "AyiinXd/resources/logo.jpg",
+              "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg",
+              "https://i.postimg.cc/x88Q0hsP/IMG-20230327-045401-544.jpg",
           ]
     )
     await bot.send_message(bf, username)
@@ -145,7 +145,7 @@ async def autobot():
     await bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = f"Ayiin{(str(who.id))[6:]}{str(ran)}bot"
+        username = f"Bocil{(str(who.id))[6:]}{str(ran)}bot"
         await bot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await bot.get_messages(bf, limit=1))[0].text
@@ -167,14 +167,14 @@ async def autobot():
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_message(bf, f"Managed With ✨ By {who.first_name}")
+            await bot.send_message(bf, f"Managed With ✬ By {who.first_name}")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setdescription")
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @AyiinSupport ✨"
+                bf, f"✬ Owner ~ {who.first_name} ✬\n\n✬ Powered By ~ @Bocilsuport ✬"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -211,14 +211,14 @@ async def autobot():
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_message(bf, f"Managed With ✨ By {who.first_name}")
+        await bot.send_message(bf, f"Managed With ✬ By {who.first_name}")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setdescription")
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"✨ Owner ~ {who.first_name} ✨\n\n✨ Powered By ~ @AyiinSupport ✨"
+            bf, f"✬ Owner ~ {who.first_name} ✬\n\n✬ Powered By ~ @Bocilsuport ✬"
         )
         await bot.send_message(
             BOTLOG_CHATID,
