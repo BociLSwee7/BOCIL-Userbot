@@ -7,15 +7,15 @@
   "stack": "container",
   "env": {
     "API_KEY": {
-      "description": "Dapatkan API KEY di Grup » https://t.me/jombloday » Lalu ketik #api atau mampir di https://t.me/jombloday/138",
+      "description": "Dapatkan API KEY di Grup » https://t.me/Bocilsuport » Lalu ketik #api atau mampir di https://t.me/Bocilsuport",
       "required": true
     },
     "API_HASH": {
-      "description": "Dapatkan API Hash di Grup » https://t.me/jombloday » Lalu ketik #api atau mampir di https://t.me/jombloday/138",
+      "description": "Dapatkan API Hash di Grup » https://t.me/Bocilsuport » Lalu ketik #api atau mampir di https://t.me/Bocilsuport",
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di Grup » https://t.me/jombloday » Lalu ketik #string atau dapatkan disini https://t.me/jombloday/143",
+      "description": "Dapatkan String Session di Grup » https://t.me/Bocilsuport » Lalu ketik #string atau dapatkan disini https://t.me/Bocilsuport",
       "required": true
     },
     "HEROKU_APP_NAME": {
