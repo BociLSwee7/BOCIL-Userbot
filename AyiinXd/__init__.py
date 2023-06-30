@@ -196,7 +196,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
-    "ALIVE_TEKS_CUSTOM",
+    "ʙᴏᴄɪʟ_sᴡᴇᴇ7",
     "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻")
 
 # Default .alive name
@@ -312,7 +312,7 @@ del _WHITELIST
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "AyiinUserBot"
+    session = "AmBocilUserBot"
 try:
     bot = TelegramClient(
         session=session,
@@ -547,7 +547,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n𖦻 **ʙᴀsᴇ ᴏɴ :** {adB.name}\n𖦻 **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n𖦻 **ᴏᴡɴᴇʀ** {user.first_name}\n𖦻 **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
+                text = f"**🔥 𖦻ʙᴏᴄɪʟ-ᴜꜱᴇʀʙᴏᴛ𖦻 ɪɴʟɪɴᴇ ᴍᴇɴᴜ 🔥**\n\n𖦻 **ʙᴀsᴇ ᴏɴ :** {adB.name}\n𖦻 **ᴅᴇᴘʟᴏʏ :** •[{HOSTED_ON}]•\n𖦻 **ᴏᴡɴᴇʀ** {user.first_name}\n𖦻 **ᴊᴜᴍʟᴀʜ :** {len(dugmeler)} **Modules**"
                 await event.edit(
                     text,
                     file=logoyins,
