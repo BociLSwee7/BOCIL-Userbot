@@ -40,16 +40,16 @@ async def ayiin_userbot_on():
     )
     try:
         if bot and tgbot:
-            BocilUBOT = await tgbot.get_me()
-            BOT_USERNAME = BocilUBOT.username
+            AyiinUBOT = await tgbot.get_me()
+            BOT_USERNAME = AyiinUBOT.username
             await bot(InviteToChannelRequest(int(BOTLOG_CHATID), [BOT_USERNAME]))
             await asyncio.sleep(3)
     except BaseException:
         pass
     try:
         if bot and tgbot:
-            BocilUBOT = await tgbot.get_me()
-            BOT_USERNAME = BocilUBOT.username
+            AyiinUBOT = await tgbot.get_me()
+            BOT_USERNAME = AyiinUBOT.username
             await bot(EditAdminRequest(BOTLOG_CHATID, BOT_USERNAME, new_rights, "Assɪsᴛᴀɴᴛ 𖦻ʙᴏᴄɪʟ"))
             await asyncio.sleep(3)
     except BaseException:
