@@ -38,7 +38,7 @@ async def helpyins(event):
         else:
             await eod(event, get_string("help_10").format(args, cmd))
     else:
-        AyiinUBOT = await tgbot.get_me()
+        BocilUBOT = await tgbot.get_me()
         BOT_USERNAME = BocilUBOT.username
         if BOT_USERNAME is not None:
             chat = "@Botfather"
